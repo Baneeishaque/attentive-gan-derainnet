@@ -1,5 +1,5 @@
+tensorflow==1.15.4
 opencv_python
-tensorflow
 glog
 numpy
 scikit_image
