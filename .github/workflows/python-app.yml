@@ -25,4 +25,4 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Test ML Model
       run: |
-        python tools/test_model.py --weights_path model/derain_gan/derain_gan.ckpt-100000 --image_path data/test_data/test_1.png
+        python test_model.py --weights_path model/derain_gan/derain_gan.ckpt-100000 --image_path data/test_data/test_1.png
