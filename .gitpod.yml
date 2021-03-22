@@ -1,0 +1,13 @@
+image: baneeishaque/gitpod-workspace-full-vnc-1366x768-tint2-pcmanfm-zsh-python35
+
+tasks:
+  # - init: /usr/bin/start-vnc-session.sh
+  - init: python -m pip install -r requirements.txt
+  - command: zsh
+
+# Ports to expose on workspace startup
+ports:
+  - port: 5900
+    onOpen: ignore
+  - port: 6080
+    onOpen: open-preview
