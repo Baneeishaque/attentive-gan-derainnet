@@ -23,7 +23,7 @@ tensorflow has not been tested but I think it will be able to work properly in
 tensorflow above version 1.10. Other required package you may install them by
 
 ```
-pip3 install -r requirements.txt
+python -m pip install -r requirements.txt
 ```
 
 ## Test model
@@ -36,7 +36,7 @@ You can test a single image on the trained model as follows
 
 ```
 cd REPO_ROOT_DIR
-python tools/test_model.py --weights_path model/derain_gan/derain_gan.ckpt-100000
+python test_model.py --weights_path model/derain_gan/derain_gan.ckpt-100000
 --image_path data/test_data/test_1.png
 ```
 
