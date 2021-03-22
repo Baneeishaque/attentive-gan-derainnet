@@ -1,0 +1,14 @@
+name: python35
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.5
+  - pip:
+    - tensorflow==1.15.4
+    - opencv_python
+    - glog
+    - numpy
+    - scikit_image
+    - easydict
+    - matplotlib 
