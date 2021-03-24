@@ -2,8 +2,8 @@ image: baneeishaque/gitpod-workspace-full-vnc-1366x768-tint2-pcmanfm-zsh-anacond
 
 tasks:
   # - init: /usr/bin/start-vnc-session.sh
-  - init: conda activate python35 && python -m pip install -r requirements.txt
-  - command: zsh && conda activate python35
+  - init: python -m pip install -r requirements.txt
+  - command: zsh
 
 # Ports to expose on workspace startup
 ports:
