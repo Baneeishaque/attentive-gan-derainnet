@@ -12,3 +12,4 @@ dependencies:
     - scikit_image
     - easydict
     - matplotlib 
+    
