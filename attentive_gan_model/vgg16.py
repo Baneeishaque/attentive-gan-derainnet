@@ -12,7 +12,7 @@ from collections import OrderedDict
 
 import tensorflow as tf
 
-from attentive_gan_model import cnn_basenet
+from derainnet.attentive_gan_model import cnn_basenet
 
 
 class VGG16Encoder(cnn_basenet.CNNBaseModel):

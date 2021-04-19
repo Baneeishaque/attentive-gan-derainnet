@@ -10,8 +10,8 @@ Attentive Gan Derain drop Network
 """
 import tensorflow as tf
 
-from attentive_gan_model import attentive_gan_net
-from attentive_gan_model import discriminative_net
+from derainnet.attentive_gan_model import attentive_gan_net
+from derainnet.attentive_gan_model import discriminative_net
 
 
 class DeRainNet(object):

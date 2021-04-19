@@ -10,7 +10,7 @@
 """
 import tensorflow as tf
 
-from attentive_gan_model import cnn_basenet
+from derainnet.attentive_gan_model import cnn_basenet
 
 
 class DiscriminativeNet(cnn_basenet.CNNBaseModel):

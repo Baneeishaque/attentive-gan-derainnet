@@ -18,8 +18,8 @@ import cv2
 from skimage.measure import compare_ssim
 from skimage.measure import compare_psnr
 
-from attentive_gan_model import derain_drop_net
-from config import global_config
+from derainnet.attentive_gan_model import derain_drop_net
+from derainnet.config import global_config
 
 CFG = global_config.cfg
 

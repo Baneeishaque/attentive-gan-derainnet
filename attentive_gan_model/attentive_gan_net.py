@@ -10,9 +10,9 @@
 """
 import tensorflow as tf
 
-from attentive_gan_model import cnn_basenet
-from attentive_gan_model import vgg16
-from config import global_config
+from derainnet.attentive_gan_model import cnn_basenet
+from derainnet.attentive_gan_model import vgg16
+from derainnet.config import global_config
 
 CFG = global_config.cfg
 
