@@ -1,5 +1,7 @@
 # attentive-gan-derainnet
-[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/Baneeishaque/attentive-gan-derainnet)  
+
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/Baneeishaque/attentive-gan-derainnet) [![DeepSource](https://deepsource.io/gh/Baneeishaque/attentive-gan-derainnet.svg/?label=active+issues&show_trend=true)](https://deepsource.io/gh/Baneeishaque/attentive-gan-derainnet/?ref=repository-badge) [![DeepSource](https://deepsource.io/gh/Baneeishaque/attentive-gan-derainnet.svg/?label=resolved+issues&show_trend=true)](https://deepsource.io/gh/Baneeishaque/attentive-gan-derainnet/?ref=repository-badge)  
+
 Use tensorflow to implement a Deep Convolution Generative Adversarial Network for image derain 
 task mainly based on the CVPR2018 paper "Attentive Generative Adversarial Network for Raindrop 
 Removal from A Single Image".You can refer to their paper for details https://arxiv.org/abs/1711.10098. 
