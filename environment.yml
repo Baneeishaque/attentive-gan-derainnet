@@ -1,4 +1,4 @@
-name: python35
+name: attentive-gan-derainnet
 channels:
   - conda-forge
   - defaults
