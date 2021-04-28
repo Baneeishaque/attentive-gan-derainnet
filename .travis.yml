@@ -1,3 +1,3 @@
 language: python
   script:
-    - pytest
+    - python test_model.py --weights_path model/derain_gan/derain_gan.ckpt-100000 --image_path data/test_data/test_1.png
