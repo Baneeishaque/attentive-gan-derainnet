@@ -8,18 +8,16 @@
 """
 Export tensorflow saved model
 """
-import os.path as ops
 import argparse
+import os.path as ops
 
 import cv2
-import numpy as np
 import matplotlib.pyplot as plt
+import numpy as np
 import tensorflow as tf
-from tensorflow import saved_model as sm
-
-from config import global_config
 from attentive_gan_model import derain_drop_net
-
+from config import global_config
+from tensorflow import saved_model as sm
 
 CFG = global_config.cfg
 
@@ -140,7 +138,6 @@ def test_load_saved_model(saved_model_dir):
     sess = tf.Session(config=sess_config)
 
     with sess.as_default():
-
         meta_graphdef = sm.loader.load(
             sess,
             tags=[sm.tag_constants.SERVING],

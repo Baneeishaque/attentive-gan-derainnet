@@ -8,15 +8,15 @@
 """
 test model
 """
-import os.path as ops
 import argparse
+import os.path as ops
 
-import tensorflow as tf
+import cv2
 import matplotlib.pyplot as plt
 import numpy as np
-import cv2
-from skimage.measure import compare_ssim
+import tensorflow as tf
 from skimage.measure import compare_psnr
+from skimage.measure import compare_ssim
 
 from derainnet.attentive_gan_model import derain_drop_net
 from derainnet.config import global_config

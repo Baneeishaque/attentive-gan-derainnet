@@ -8,9 +8,8 @@
 """
 The base convolution neural networks mainly implement some useful cnn functions
 """
-import tensorflow as tf
-import tensorflow.contrib.layers as tf_layer
 import numpy as np
+import tensorflow as tf
 
 
 class CNNBaseModel(object):

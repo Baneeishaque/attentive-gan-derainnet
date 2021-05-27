@@ -18,6 +18,7 @@ class DeRainNet(object):
     """
 
     """
+
     def __init__(self, phase):
         """
 
@@ -37,7 +38,6 @@ class DeRainNet(object):
         :return:
         """
         with tf.variable_scope(name, reuse=reuse):
-
             # 计算attentive rnn loss
             attentive_rnn_loss, attentive_rnn_output = self._attentive_gan.compute_attentive_rnn_loss(
                 input_tensor=input_tensor,
@@ -82,7 +82,6 @@ class DeRainNet(object):
         :return:
         """
         with tf.variable_scope(name, reuse=reuse):
-
             attentive_rnn_out = self._attentive_gan.build_attentive_rnn(
                 input_tensor=input_tensor,
                 name='attentive_rnn_loss/attentive_inference'

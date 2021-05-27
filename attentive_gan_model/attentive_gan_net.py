@@ -21,6 +21,7 @@ class GenerativeNet(cnn_basenet.CNNBaseModel):
     """
     实现Attentive GAN Network中的生成网络 Fig(2)中的generator部分
     """
+
     def __init__(self, phase):
         """
 

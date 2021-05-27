@@ -17,6 +17,7 @@ class DiscriminativeNet(cnn_basenet.CNNBaseModel):
     """
 
     """
+
     def __init__(self, phase):
         """
 

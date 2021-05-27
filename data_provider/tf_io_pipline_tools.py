@@ -12,10 +12,9 @@ import os
 import os.path as ops
 
 import cv2
+import glog as log
 import numpy as np
 import tensorflow as tf
-import glog as log
-
 from config import global_config
 
 CFG = global_config.cfg

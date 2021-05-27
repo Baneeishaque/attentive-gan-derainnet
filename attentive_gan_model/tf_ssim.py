@@ -8,14 +8,15 @@
 """
 Implement ssim compute using tensorflow
 """
-import tensorflow as tf
 import numpy as np
+import tensorflow as tf
 
 
 class SsimComputer(object):
     """
 
     """
+
     def __init__(self):
         """
 

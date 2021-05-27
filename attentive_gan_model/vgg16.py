@@ -8,7 +8,6 @@
 """
 实现pretrained vgg用于特征提取计算attentive gan损失
 """
-from collections import OrderedDict
 
 import tensorflow as tf
 
@@ -19,6 +18,7 @@ class VGG16Encoder(cnn_basenet.CNNBaseModel):
     """
     实现了一个基于vgg16的特征编码类
     """
+
     def __init__(self, phase):
         """
 

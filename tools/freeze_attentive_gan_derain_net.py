@@ -13,9 +13,8 @@ from __future__ import division
 from __future__ import print_function
 
 import tensorflow as tf
-from tensorflow.python.framework import graph_util
-
 from attentive_gan_model import derain_drop_net
+from tensorflow.python.framework import graph_util
 
 MODEL_WEIGHTS_FILE_PATH = './test.ckpt'
 

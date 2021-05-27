@@ -8,18 +8,17 @@
 """
 模型训练脚本
 """
+import argparse
 import os
 import os.path as ops
-import argparse
 import time
 
-import tensorflow as tf
-import numpy as np
 import glog as log
-
-from data_provider import data_feed_pipline
-from config import global_config
+import numpy as np
+import tensorflow as tf
 from attentive_gan_model import derain_drop_net
+from config import global_config
+from data_provider import data_feed_pipline
 
 CFG = global_config.cfg
 VGG_MEAN = [103.939, 116.779, 123.68]

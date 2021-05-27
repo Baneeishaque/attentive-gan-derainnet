@@ -9,14 +9,13 @@
 Data feed pipline
 """
 import argparse
+import glob
 import os
 import os.path as ops
 import random
 
-import glob
 import glog as log
 import tensorflow as tf
-
 from config import global_config
 from data_provider import tf_io_pipline_tools
 
@@ -39,6 +38,7 @@ class DerainDataProducer(object):
     """
     Convert raw image file into tfrecords
     """
+
     def __init__(self, dataset_dir):
         """
 
@@ -67,6 +67,7 @@ class DerainDataProducer(object):
         :param step_size: generate a tfrecord every step_size examples
         :return:
         """
+
         def _read_training_example_index_file(_index_file_path):
 
             assert ops.exists(_index_file_path)
@@ -174,6 +175,7 @@ class DerainDataProducer(object):
         testing and validation. Each image folder are processed separately
         :return:
         """
+
         def _gather_example_info():
             """
 
@@ -191,7 +193,6 @@ class DerainDataProducer(object):
             return _info
 
         def _split_training_examples(_example_info):
-
             random.shuffle(_example_info)
 
             _example_nums = len(_example_info)
@@ -226,6 +227,7 @@ class DerainDataFeeder(object):
     """
     Read training examples from tfrecords for nsfw model
     """
+
     def __init__(self, dataset_dir, flags='train'):
         """
 
@@ -295,7 +297,6 @@ class DerainDataFeeder(object):
 
 
 if __name__ == '__main__':
-
     # init args
     args = init_args()
 
