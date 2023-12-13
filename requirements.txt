@@ -1,4 +1,4 @@
-tensorflow==1.15.4
+tensorflow==2.15.0.post1
 opencv_python
 glog
 numpy
